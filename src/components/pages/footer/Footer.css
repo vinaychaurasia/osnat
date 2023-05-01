@@ -1,0 +1,193 @@
+.footer-area{
+    margin-top: 100px;
+    padding: 100px 0 5px 0;
+}
+
+.main{
+    width: 1200px;
+    margin: 0 auto;
+    /* background: #121212; comment -  */
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.single-footer{
+    width: 230px;
+}
+
+.single-footer:first-child{
+    width: 400px;
+}
+
+.single-footer h4{
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.footer-social a{
+    color: #333;
+    border: 1px solid #333;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.footer-social{
+    margin-top: 20px;
+}
+
+.single-footer ul{
+    list-style: none;
+}
+
+.single-footer ul li{
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.single-footer ul li a{
+    color: #333;
+    text-transform: capitalize;
+    text-decoration: navajowhite;
+}
+
+.single-footer ul li a i{
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.copy{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 850px) {
+    .main{
+        width: 320px;
+    }
+
+    .single-footer:first-child, .single-footer{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* .footer{
+        padding: 4rem 2rem;
+    }
+
+    .footer i{
+        margin: 1rem 1rem 0 0;
+    }
+
+    .footer div{
+        width: 50%;
+        
+    } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .footer{
+    padding: 4rem 6rem;
+    background: #000;
+    color: #fff;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top i{
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.top i:hover{
+    color: #01959a;
+}
+
+.bottom{
+    padding-top: 2rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bottom div{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom h4{
+    font-size: 1.3rem;
+    padding: 1rem 0 .8rem 0;
+}
+
+.bottom p{
+    color: #fafafa;
+    padding-bottom: .4rem;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 850px) {
+    .footer{
+        padding: 4rem 2rem;
+    }
+
+    .footer i{
+        margin: 1rem 1rem 0 0;
+    }
+
+    .botom div{
+        width: 50%;
+        
+    }
+} */
