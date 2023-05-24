@@ -2,8 +2,8 @@ import React from "react";
 import './Quality.css';
 
 const Quality = () => {
-    return(<>
-        <h1>Quality</h1>
+    return(<section className="quality">
+        <h1>Osnat</h1>
         <p>
             <div>
                 Premium Ingredients: Our products are made from only the highest quality ingredients, carefully 
@@ -14,12 +14,6 @@ const Quality = () => {
                 including testing for purity, potency, and safety, as well as regular inspections of manufacturing 
                 facilities and processes.
             </div>
-            {/* <div>
-                Industry Certifications: You could mention any industry certifications that your company or products have received, such as FDA approval, ISO certification, or other relevant industry certifications. This can help provide additional assurance of the quality and safety of your products.
-            </div> */}
-            {/* <div>
-                Customer Feedback: You could feature customer feedback on your website, including testimonials and reviews from satisfied customers who have experienced the quality and effectiveness of your products firsthand.
-            </div> */}
             <div>
                 Expert Formulations: Our products are developed and formulated by experts in the pharmaceutical 
                 industry, using the latest scientific research and cutting-edge technologies to ensure the highest 
@@ -78,7 +72,7 @@ const Quality = () => {
                 of customers without sacrificing quality or effectiveness.
             </div>
         </p>
-    </>)
+    </section>)
 }
 
 export default Quality;

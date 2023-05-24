@@ -8,14 +8,16 @@ function Footer(){
             <div className="main">
                 <div className="footer">
                     <div className="single-footer">
-                        <h4>about us</h4>
-                        <p>Lorem ipsum Provides high-performance and low-allocating types that serialize 
-                            objects to JavaScript Object Notation (JSON) text and deserialize JSON text 
+                        <h4>Osnat Pharmaceuticals</h4>
+                        <p>
+                            Osnat Pharmaceuticals is a leading PCD PharmaCeutical Company. We Provide healthy, 
+                            reliable, high quality and affordable products which is best for patience's compliance
+                            and belief.
                         </p>
                         <div className="footer-social">
-                            <a href='/'><i className='fab fa-facebook-f'></i> </a>
-                            <a href='/'><i className='fab fa-twitter-f'></i> </a>
-                            <a href='/'><i className='fab fa-instagram-f'></i> </a>
+                            <a href='/'><i class="fa-brands fa-facebook"></i></a>
+                            <a href='/'><i class="fa-brands fa-twitter"></i></a>
+                            <a href='/'><i class="fa-brands fa-instagram"></i></a>
                             <a href='/'><i className='fab fa-linkedin-f'></i> </a>
                         </div>
                     </div>
@@ -44,10 +46,7 @@ function Footer(){
                         <ul>
                             <li><a href='/'><i className='fas fa-chevron-right'></i>Osnat@pharma.com</a></li>
                             <li><a href='/'><i className='fas fa-chevron-right'></i>758939389483</a></li>
-                            <li><a href='/'><i className='fas fa-chevron-right'></i>Plot no 60-490/39In phase 2 </a></li>
-                            <li><a href='/'><i className='fas fa-chevron-right'></i>Vision Mission Values</a></li>
-                            <li><a href='/'><i className='fas fa-chevron-right'></i>Why Us</a></li>
-                            <li><a href='/'><i className='fas fa-chevron-right'></i>Infrastructure</a></li>
+                            <li><a href='/'><i className='fas fa-chevron-right'></i>379/A, Khasra No.108, Khatuni No.488, Village Maloya, Chandigarh-160025, India</a></li>
                         </ul>
                     </div>
                 </div>

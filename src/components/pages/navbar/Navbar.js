@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+
 import ProcductsDropDown from '../../DropDowns/ProcductsDropDown';
 import CompanyDropDown from '../../DropDowns/CompanyDropDown';
+import logo from '../../../images/logo.jpg';
+
+import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -48,7 +51,7 @@ function Navbar() {
     <header>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          LOGO
+          <img src={logo} alt='LOGO'></img>
           <i class='fab fa-firstdraft' />
         </Link>
 

@@ -1,12 +1,13 @@
 import React from 'react';
-import '../../../App.css';
+import Details from './Details';
+import OurProducts from './OurProducts';
+
 
 const Home = () => {
-  return (
-    <>
-      <h1 className='home'>EPIC</h1>
-    </>
-  );
+  return(<>
+        <Details />
+        <OurProducts />
+    </>);
 }
 
 export default Home;

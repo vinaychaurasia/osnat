@@ -5,32 +5,97 @@
     flex-wrap: wrap;
 } */
 
-.card{
-    background: white;
-    width: 270px;
-    height: 400px;
-    margin: 10px;
-    border-radius: 15px 15px 0 0;
+.card-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-/* .card-image{
-    height: 170px;
-    margin-bottom: 15px;
-    background-size: cover;
-} */
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: white;
+    width: 270px;
+    height: 350px;
+    margin-right: 15px;
+    /* padding-bottom: 10px; */
+    border-radius: 15px 15px;
+    text-align: center;
+}
+
+img {
+    width: inherit;
+}
+
+.card-image{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    margin: 10px 10px 0 10px;
+    padding: 10px 0;
+    overflow: hidden;
+}
 
 /* .card-1 {
     background-image: url('C:\\Users\\vchaurasia\\Desktop\\projects\\osnat\\src\\images\\skinClues.jpg');
 } */
 
-/* .card:hover{
-    background-color: rgb(62, 62, 62);
-    color: white;
+.card:hover{
+    background-color: rgb(250, 250, 250);
+    color: rgb(40, 40, 40);;
     cursor: pointer;
-    transform: scale(1.03);
-    transition: all .5s ease-in-out;
+    transform: scale(1.02);
+    transition: all .4s ease-in-out;
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.card.brand-name {
+    /* text-align: justify;
+    text-justify: inter-word; */
+    text-align: left;
+    color: rgb(48, 47, 47);
+    font-size: 20px;
+}
+
+.brand-name ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.brand-name li {
+    display: inline-block;
+    margin-right: 10px; /* adds space between the li elements */
+}
+
+
+.card .compositions {
+    font-size: 12px;
+    padding: 5px;
+    color: rgb(120, 115, 115);
+    height: 50px;
+    text-align: start;
+    padding-left: 12px;
+}
+
+/* .card p {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 10px;
 } */
 
+.price {
+    font-size: 12px;
+    text-align: start;
+    padding-left: 12px;
+    color: rgb(120, 115, 115);
+}
 
 
 
@@ -69,28 +134,27 @@
 
 .container .card:hover .imgBx img{
     transform: scale(1.5);
-}
+} */
 
-.container .card .content{
+.card .content{
     padding: 10px;
 }
 
-.container .card .content .productName h3{
+.card .content .productName h3{
     font-size: 18px;
     font-weight: 500;
     color: #333;
     margin: 5px 0;
 }
 
-.container .card .content .price_rating{
+.card .content .price_rating{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.container .card .content .price_rating h2{
+.card .content .price_rating h2{
     font-size: 20px;
     color: #ff2020;
     font-weight: 500;
 }
- */

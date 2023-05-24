@@ -1,13 +1,11 @@
 import React from 'react';
-import Navbar from './components/pages/navbar/Navbar';
-import './App.css';
-import Home from './components/pages/home/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Services from './components/pages/Services';
+
+import Navbar from './components/pages/navbar/Navbar';
+import Home from './components/pages/home/Home';
 import Products from './components/pages/products/Products';
 import ContactUs from './components/pages/contactUs/ContactUs';
-// import SignUp from './components/pages/SignUp';
-import Tablets from './components/pages/Tablets/Tablets';
+import Tablets from './components/pages/tablets/Tablets';
 import AboutUs from './components/pages/company/AboutUs';
 import Infrastructure from './components/pages/company/Infrastructure';
 import Quality from './components/pages/company/Quality';
@@ -25,17 +23,17 @@ import HerbalJuiceChurna from './components/pages/products/herbalJuiceChurna/Her
 import FranchiseBusiness from './components/pages/franchiseBusiness/FranchiseBusiness';
 import Footer from './components/pages/footer/Footer';
 
+import './App.css';
+
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
         <Route path='/' exact element={<Home />} />
-        {/* <Route path='/services' element={<Services />} /> */}
         <Route path='/products' element={<Products />} />
         <Route path='/franchise' element={<FranchiseBusiness />} />
         <Route path='/contact-us' element={<ContactUs />} />
-        {/* <Route path='/sign-up' element={<SignUp />} /> */}
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/infrastructure' element={<Infrastructure />} />
         <Route path='/quality' element={<Quality />} />

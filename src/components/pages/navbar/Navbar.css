@@ -58,24 +58,164 @@ header ul li a{
 } */
 
 
+
+/* nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100%;
+  background: #121212;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header .logo{
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  position: relative;
+}
+
+header nav ul li .sub-menu:before{
+  content: '\f0d7';
+  font-family: fontAwesome;
+  position: absolute;
+  line-height: 50px;
+  color: #fff;
+  right: 5px;
+}
+
+header nav ul li ul{
+  position: absolute;
+  left: 0;
+  background: #333;
+  display: none;
+}
+
+header nav ul li.active ul{
+  display: block;
+}
+
+header nav ul li ul li {
+  display: block;
+  width: 200px;
+}
+
+header nav ul li a{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  display: black;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{
+  color: #fff;
+  background: #2196f3;
+} */
+
+
+
+/* .manu-toggle{
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+} */
+
+/* @media (max-width: 991px){
+  header{
+    padding: 0 20px;
+  } */
+  /* .menu-toggle{
+    display: block;
+  } */
+
+  /* header nav{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #333;
+    top: 50px;
+    left: -100%;
+    transform: 0.5s;
+  }
+
+  header nav.active{
+    left: 0;
+  }
+
+  header nav ul{
+    display: block;
+    text-align: center;
+  }
+
+  header nav ul li a{
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+  }
+
+  header nav ul li.active ul{
+    position: relative;
+  }
+  header nav ul li ul ul{
+    width: 100%;
+  }
+} */
+
+
+
 .navbar {
-  position: fixed;
+  position: relative;
   background: #121212;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  z-index: 1000;
 }
 
-.navbar-logo {
+nav .navbar-logo img {
+  width: inherit;
+}
+
+nav .navbar-logo {
+  /* position: relative; */
+  width: 50px;
+  /* margin: 10px 10px 0 10px;
+  padding: 10px 10px 0 10px; */
+  overflow: hidden;
+}
+
+/* .navbar-logo {
   color: #fff;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
-}
+} */
 
 .fa-firstdraft {
   margin-left: 0.5rem;

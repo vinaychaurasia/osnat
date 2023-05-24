@@ -1,20 +1,23 @@
 import React from "react";
-import img1 from 'C:\\Users\\vchaurasia\\Desktop\\projects\\osnat\\src\\images\\skinClues.jpg';
 import './ProductsCard.css';
+// import Card from "../../card/Card";
 
-const ProductsCard = () => {
+const ProductsCard = (props) => {
     return(
-        <div className="card">
-            <div className="card-image card-1">
-                <img src={img1} alt="product"></img>
+        <div className="card" key={props.id}>
+            <div className="card-image">
+                <img src={props.image} alt={props.alt}></img>
             </div>
-            <h2 className="content">
-                Product name 1
-            </h2>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa saepe optio eos facere nisi 
-                deserunt, voluptate excepturi dolor iusto praesentium eum illo velit labore, sunt exercitationem 
-                odio fugiat ut laboriosam.
+            <ul className="brand-name">
+                <li className="left">
+                    {props.name}
+                </li>
+                <li className="right">
+                    ₹<b>{props.price}</b>
+                </li>
+            </ul>
+            <p className="compositions">
+                {props.compositions}<br></br>
             </p>
         </div>
     )
