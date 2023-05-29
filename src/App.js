@@ -3,13 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/pages/navbar/Navbar';
 import Home from './components/pages/home/Home';
-import Products from './components/pages/products/Products';
 import ContactUs from './components/pages/contactUs/ContactUs';
-import Tablets from './components/pages/tablets/Tablets';
 import AboutUs from './components/pages/company/AboutUs';
 import Infrastructure from './components/pages/company/Infrastructure';
 import Quality from './components/pages/company/Quality';
 import Management from './components/pages/company/Management';
+import Tablets from './components/pages/products/tablets/Tablets';
 import BabyCare from './components/pages/products/babyCare/BabyCare';
 import Capsules from './components/pages/products/capsules/Capsules';
 import PediatricDropsSyrups from './components/pages/products/pediatricDropsSyrups/PediatricDropsSyrups';
@@ -31,7 +30,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' exact element={<Home />} />
-        <Route path='/products' element={<Products />} />
         <Route path='/franchise' element={<FranchiseBusiness />} />
         <Route path='/contact-us' element={<ContactUs />} />
         <Route path='/about-us' element={<AboutUs />} />

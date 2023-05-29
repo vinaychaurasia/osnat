@@ -55,12 +55,24 @@ img {
     0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
-.card.brand-name {
+.card .brand-name {
     /* text-align: justify;
     text-justify: inter-word; */
     text-align: left;
     color: rgb(48, 47, 47);
-    font-size: 20px;
+    font-size: 15px;
+}
+
+.card .brand-name .left{
+    display: inline-block;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.card .brand-name .right{
+    display: inline-block;
+    text-align: left;
+    padding-left: 10px;
 }
 
 .brand-name ul {
@@ -69,26 +81,16 @@ img {
     margin: 0;
 }
 
-.brand-name li {
-    display: inline-block;
-    margin-right: 10px; /* adds space between the li elements */
-}
 
 
 .card .compositions {
     font-size: 12px;
-    padding: 5px;
+    padding: 0 5px;
     color: rgb(120, 115, 115);
-    height: 50px;
+    height: auto;
     text-align: start;
     padding-left: 12px;
 }
-
-/* .card p {
-    text-align: justify;
-    text-justify: inter-word;
-    padding: 10px;
-} */
 
 .price {
     font-size: 12px;
@@ -97,44 +99,6 @@ img {
     color: rgb(120, 115, 115);
 }
 
-
-
-/* 
-.container{
-    position: relative;
-    width: 120px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-    padding: 20px;
-}
-
-.container .card{
-    width: 100%;
-    background: #fff;
-}
-
-.container .card .imgBx{
-    position: relative;
-    width: 100%;
-    height: 310px;
-    overflow: hidden;
-}
-
-.container .card .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.5s ease-in-out;
-    transform-origin: right;
-}
-
-.container .card:hover .imgBx img{
-    transform: scale(1.5);
-} */
 
 .card .content{
     padding: 10px;

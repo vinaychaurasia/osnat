@@ -1,4 +1,7 @@
 import DetailsData from './DetailsData';
+import Slider from './slider/Slider';
+import SliderData from './slider/SliderData';
+
 import image2 from '../../../images/ifrastrucutre-unit-1.jpg';
 import image3 from '../../../images/infrastructure-unit-2.jpg';
 import image4 from '../../../images/DERMACLUES (13).jpeg';
@@ -29,6 +32,8 @@ const Details = () => {
                 bring smile on their faces. Our Products are manufactured in an ISO, GMP & WHO certified global 
                 units.
             </p>
+
+            <Slider slides = {SliderData} />
 
             <DetailsData
                 cName="first-det"

@@ -33,7 +33,9 @@
 }
 
 .footer-social a{
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 130%;
     border: 1px solid #ffffff;
     width: 40px;
     height: 40px;
@@ -64,7 +66,7 @@
     text-decoration: navajowhite;
 }
 
-.single-footer ul li a i{
+.single-footer ul li a span{
     position: absolute;
     left: 0;
     top: 5px;

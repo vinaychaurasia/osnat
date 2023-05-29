@@ -77,7 +77,7 @@ const FranchiseBusiness = () => {
             <hr />
             <div className="franchise">
                 A franchise business can offer many advantages to individuals who are looking to start their own 
-                business. Here are some reasons why starting a franchise business can be a good choice:
+                business. <br /> Here are some reasons why starting a franchise business can be a good choice:
 
                 <div className="list-align">
                 <ul>

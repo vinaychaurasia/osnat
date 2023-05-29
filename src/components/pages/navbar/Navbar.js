@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import {FaCaretDown} from 'react-icons/fa';
 
 import ProcductsDropDown from '../../DropDowns/ProcductsDropDown';
 import CompanyDropDown from '../../DropDowns/CompanyDropDown';
@@ -72,11 +73,11 @@ function Navbar() {
             onMouseLeave={onCompanyMouseLeave}
           >
             <Link
-              to='/company'
+              to='#'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Company <i className='fas fa-caret-down' />
+              Company <FaCaretDown />
             </Link>
             {companyDropDown && <CompanyDropDown />}
           </li>
@@ -87,11 +88,11 @@ function Navbar() {
             onMouseLeave={onProductMouseLeave}
           >
             <Link
-              to='/products'
+              to='#'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Products <i className="fa fa-caret-down" aria-hidden="true"></i>
+              Products <FaCaretDown />
             </Link>
             {procductsDropDown && <ProcductsDropDown />}
           </li>
