@@ -49,7 +49,7 @@ function Navbar() {
   };
 
   return (
-    <header>
+    // <header className='header'>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           <img src={logo} alt='LOGO'></img>
@@ -61,7 +61,7 @@ function Navbar() {
         </div>
 
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
+          <li className='nav-item' onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}>
             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
               Home
             </Link>
@@ -71,6 +71,7 @@ function Navbar() {
             className='nav-item'
             onMouseEnter={onCompanyMouseEnter}
             onMouseLeave={onCompanyMouseLeave}
+            onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}
           >
             <Link
               to='#'
@@ -86,6 +87,7 @@ function Navbar() {
             className='nav-item'
             onMouseEnter={onProductMouseEnter}
             onMouseLeave={onProductMouseLeave}
+            onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}
           >
             <Link
               to='#'
@@ -97,7 +99,7 @@ function Navbar() {
             {procductsDropDown && <ProcductsDropDown />}
           </li>
 
-          <li className='nav-item'>
+          <li className='nav-item'  onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}>
             <Link
               to='/franchise'
               className='nav-links'
@@ -107,7 +109,7 @@ function Navbar() {
             </Link>
           </li>
 
-          <li className='nav-item'>
+          <li className='nav-item'  onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}>
             <Link
               to='/contact-us'
               className='nav-links'
@@ -118,7 +120,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-    </header>
+    // </header>
   );
 }
 

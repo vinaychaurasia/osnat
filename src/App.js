@@ -28,6 +28,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <div className='all-pages'>
       <Routes>
         <Route path='/' exact element={<Home />} />
         <Route path='/franchise' element={<FranchiseBusiness />} />
@@ -49,6 +50,8 @@ function App() {
         <Route path='/products/herbal-syrups-Oils' element={<HerbalSyrupsOil />} />
         <Route path='/products/herbal-juice-churna' element={<HerbalJuiceChurna />} />
       </Routes>
+      </div>
+      
       <Footer />
     </Router>
   );

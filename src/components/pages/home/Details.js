@@ -2,8 +2,8 @@ import DetailsData from './DetailsData';
 import Slider from './slider/Slider';
 import SliderData from './slider/SliderData';
 
-import image2 from '../../../images/ifrastrucutre-unit-1.jpg';
-import image3 from '../../../images/infrastructure-unit-2.jpg';
+import image2 from '../../../images/infrastructure_unit_1.jpg';
+import image3 from '../../../images/infrastructure_unit_2.jpg';
 import image4 from '../../../images/DERMACLUES (13).jpeg';
 import image5 from '../../../images/DERMACLUES (15).jpeg';
 

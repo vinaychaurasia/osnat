@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classNames from "classnames";
 
 import './Slider.scss';
@@ -45,19 +46,22 @@ class Slider extends React.Component {
       const { activeSlide, prevSlide, sliderReady } = this.state;
       return (
         <div className={classNames('slider', { 's--ready': sliderReady })}>
-          <p className="slider__top-heading">Travelers</p>
+          {/* <p className="slider__top-heading">Travelers</p> */}
           <div className="slider__slides">
             {this.props.slides.map((slide, index) => (
               <div
                 className={classNames('slider__slide', { 's--active': activeSlide === index, 's--prev': prevSlide === index  })}
-                key={slide.city}
+                key={slide.id}
                 >
                 <div className="slider__slide-content">
-                  <h3 className="slider__slide-subheading">{slide.country || slide.city}</h3>
+                  <h3 className="slider__slide-subheading">{slide.country || slide.productType}</h3>
                   <h2 className="slider__slide-heading">
-                    {slide.city.split('').map(l => <span>{l}</span>)}
+                    {slide.productType.split('').map(l => <span>{l}</span>)}
                   </h2>
-                  <p className="slider__slide-readmore">read more</p>
+                  <Link to = {slide.url}>
+                    <button className="slider__slide-checkout" 
+                      onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}>Check Out</button>
+                  </Link>
                 </div>
                 <div className="slider__slide-parts">
                   {[...Array(this.IMAGE_PARTS).fill()].map((x, i) => (
