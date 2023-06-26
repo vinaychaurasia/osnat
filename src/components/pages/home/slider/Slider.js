@@ -54,10 +54,10 @@ class Slider extends React.Component {
                 key={slide.id}
                 >
                 <div className="slider__slide-content">
-                  <h3 className="slider__slide-subheading">{slide.country || slide.productType}</h3>
-                  <h2 className="slider__slide-heading">
+                  <h3 className="slider__slide-subheading">{slide.productType}</h3>
+                  {/* <h2 className="slider__slide-heading">
                     {slide.productType.split('').map(l => <span>{l}</span>)}
-                  </h2>
+                  </h2> */}
                   <Link to = {slide.url}>
                     <button className="slider__slide-checkout" 
                       onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}>Check Out</button>

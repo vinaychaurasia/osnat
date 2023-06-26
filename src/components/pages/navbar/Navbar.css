@@ -11,7 +11,6 @@ header .header{
   align-items: center;
   font-size: 1.2rem;
   z-index: 1000;
-  /* margin: 4rem; */
 }
 
 nav .navbar-logo img {
@@ -84,7 +83,20 @@ nav .navbar-logo {
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
-    position: relative;
+    position: fixed;
+  }
+
+  nav .navbar-logo img {
+    width: inherit;
+  }
+  
+  nav .navbar-logo {
+    /* position: relative; */
+    width: 50px;
+    padding-top: 28px;
+    /* margin: 10px 10px 0 10px;
+    padding: 10px 10px 0 10px; */
+    overflow: hidden;
   }
 
   .nav-menu {

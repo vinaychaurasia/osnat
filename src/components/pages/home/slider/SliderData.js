@@ -36,7 +36,7 @@ const SliderData = [
     },
     {
       id: 5,
-      productType: 'FACE SERUM, HAIR SERUM, LOTIONS, SHAMPOO, FACEWASH (DERMATOLOGY)',
+      productType: 'SERUMS, LOTIONS, SHAMPOO, FACEWASH (DERMATOLOGY)',
       url: '/products/beauty',
       img: shampoo_facewash_carousel,
     },
